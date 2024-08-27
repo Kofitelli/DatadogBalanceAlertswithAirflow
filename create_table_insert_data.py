@@ -38,12 +38,12 @@ with DAG(
         postgres_conn_id='postgres_localhost',
         sql="""
             INSERT INTO banks (entityID, entityType, balance, mapName, threshold, usage, email)
-            VALUES (1001, 'WALLET', 100.75, 'TIGO_COLLECTIONS', 1000, 'COLLECTIONS', 'boatengkofi7890@gmail.com'),
-                (1002, 'WALLET', 500.00, 'TIGO_DISBURSEMENTS', 10000, 'DISBURSEMENTS', 'boatengkofi7890@gmail.com'),
-                (1003, 'WALLET', 22000.34, 'AIRTEL_COLLECTIONS', 1, 'COLLECTIONS', 'kofi.mante.boateng@icloud.com'),
-                (1004, 'WALLET', 600.50, 'AIRTEL_DISBURSEMENTS', 10000, 'DISBURSEMENTS', 'kofi.mante.boateng@icloud.com'),      
-                (1005, 'WALLET', 17000.00, 'MTN_COLLECTIONS', 1, 'COLLECTIONS', 'boatengkofimante@gmail.com'),
-                (1006, 'WALLET', 72000.00, 'MTN_DISBURSEMENTS', 10000, 'DISBURSEMENTS', 'boatengkofimante@gmail.com');
+            VALUES (1001, 'WALLET', 100.75, 'TIGO_COLLECTIONS', 1000, 'COLLECTIONS', 'JohnDoe@example.com'),
+                (1002, 'WALLET', 500.00, 'TIGO_DISBURSEMENTS', 10000, 'DISBURSEMENTS', 'JohnDoe@example.com'),
+                (1003, 'WALLET', 22000.34, 'AIRTEL_COLLECTIONS', 1, 'COLLECTIONS', 'JohnDoe@example.com'),
+                (1004, 'WALLET', 600.50, 'AIRTEL_DISBURSEMENTS', 10000, 'DISBURSEMENTS', 'JohnDoe@example.com'),      
+                (1005, 'WALLET', 17000.00, 'MTN_COLLECTIONS', 1, 'COLLECTIONS', 'JohnDoe@example.com'),
+                (1006, 'WALLET', 72000.00, 'MTN_DISBURSEMENTS', 10000, 'DISBURSEMENTS', 'JohnDoe@example.com');
                 """
     )
 

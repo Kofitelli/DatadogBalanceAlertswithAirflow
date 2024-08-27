@@ -15,8 +15,8 @@ configuration = Configuration(
      host='https://us5.datadoghq.com',
      ssl_ca_cert=certifi.where()
 )
-configuration.api_key['apiKeyAuth']='d9814a94684ff3212854c9e6e5016119'
-configuration.api_key['appKeyAuth']='1c191b30430123db80af85e54a0814767be6451e'
+configuration.api_key['apiKeyAuth']='API_KEY'
+configuration.api_key['appKeyAuth']='APP_KEY'
 
 
 

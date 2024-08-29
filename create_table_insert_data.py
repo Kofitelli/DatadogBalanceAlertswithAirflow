@@ -13,7 +13,7 @@ with DAG(
     start_date=datetime(2024, 8, 18),
     schedule_interval=None
 ) as dag:
-    task1 = PostgresOperator(
+    create_table = PostgresOperator(
         task_id='create_postgres_table',
         postgres_conn_id='postgres_localhost',
         sql="""
@@ -30,7 +30,7 @@ with DAG(
         """
     )
 
-    task2 = PostgresOperator(
+    insert_table = PostgresOperator(
         task_id='insert_into_table',
         postgres_conn_id='postgres_localhost',
         sql="""
@@ -45,4 +45,4 @@ with DAG(
     )
 
     
-    task1 >> task2
+    create_table >> insert_table

@@ -32,8 +32,5 @@ with DAG(
     )
 
     check_balances_task >> low_balance_alerts_task, trigger_daily_alert_dag
-
-    
-
    
     

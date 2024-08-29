@@ -1,11 +1,9 @@
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from airflow.operators.trigger_dagrun import TriggerDagRunOperator
-from datetime import datetime, timedelta
-from airflow.utils.email import send_email
 from airflow.providers.postgres.hooks.postgres import PostgresHook
+from airflow.utils.email import send_email
 from datadog import initialize, statsd
-from datetime import datetime
 from datadog_api_client import ApiClient, Configuration
 from datadog_api_client.v2.api.metrics_api import MetricsApi
 from datadog_api_client.v2.model.metric_intake_type import MetricIntakeType
@@ -13,6 +11,7 @@ from datadog_api_client.v2.model.metric_payload import MetricPayload
 from datadog_api_client.v2.model.metric_point import MetricPoint
 from datadog_api_client.v2.model.metric_resource import MetricResource
 from datadog_api_client.v2.model.metric_series import MetricSeries
+from datetime import datetime, timedelta
 import certifi
 
 configuration = Configuration(

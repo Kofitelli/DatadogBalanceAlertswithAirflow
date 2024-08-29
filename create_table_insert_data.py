@@ -1,7 +1,7 @@
 from dag_fxn import *
 
 default_args = {
-    'owner': 'nsano',
+    'owner': '@company',
     'retries': 1,
     'retry_delay': timedelta(minutes=5)
 }

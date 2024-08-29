@@ -3,7 +3,7 @@ from dag_fxn import *
 initialize(**options)
 
 default_args = {
-    'owner': 'nsano_Ltd',
+    'owner': '@company',
     'start_date': datetime(2024, 8, 19),
     'retries': 1,
     'retry_delay': timedelta(minutes=5),
